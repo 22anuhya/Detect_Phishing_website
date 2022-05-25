@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URL Phishing detection</title>
+        <meta name="viewport" content="width=device-width ,initial-scale=1">
+    </head>
+    <body>
+        <!--'domain', 'ranking', 'isIp', 'valid', 'activeDuration', 'urlLen', 'is@','isredirect', 'haveDash', 'domainLen', 'nosOfSubdomain', 'label'-->
+        <h1>Model to classify URL into phishing or non phishing</h1>
+        <div id="formlink">
+            <form method="post" action="/predict">
+                Domain:<input type="text" name="domain"><br><br>
+                Ranking:<input type="number" name="rank"><br><br>
+                IP:<input type="number" placeholder="0/1" name="isIp"><br><br>
+                valid:<input type="number" placeholder="0/1" name="valid"><br><br>
+                activeDuration<input type="number" name="activeDuration"><br><br>
+                urlLen:<input type="number" name="urllen"><br><br>
+                is@:<input type="number" placeholder="0/1" name="is@"><br><br>
+                isredirect<input type="number" placeholder="0/1" name="isredirect"><br><br>
+                haveDash<input type="number" placeholder="0/1" name="haveDash"><br><br>
+                domainLen<input type="number" name="domainLen"><br><br>
+                noOfSubdomain<input type="number" name="noOfSubdomain"><br><br>
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </body>
+</html>
